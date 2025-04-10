@@ -53,6 +53,12 @@ const list_People: User[] = [
         email: "sam198281@gmail.com",
         role: Role.Member,
         status: Status.Inactive
+    }, {
+        id: 28,
+        username: "Alex",
+        email: "alex56789@gmail.com",
+        role: Role.Guest,
+        status: Status.Inactive
     }
 ]
 
