@@ -3,10 +3,10 @@ var f_name = "Diego";
 var alive = false;
 var age = 17;
 let greeting = "Welcome to Jurassic Park";
-function add(n1, n2) {
-    return n1 + n2;
-}
-console.log(add(12000, 32000));
+// function add(n1: number, n2: number) {
+//     return n1 + n2
+// }
+// console.log(add(12000, 32000))
 // function printResult(num: number): number {
 //     console.log('Result: ' + num);
 //     return num
@@ -31,3 +31,4 @@ function greet(user) {
 function isOlder(user, checkAge) {
     return checkAge > user.age;
 }
+let add;

@@ -8,7 +8,7 @@ let greeting = "Welcome to Jurassic Park"
 //     return n1 + n2
 // }
 
-console.log(add(12000, 32000))
+// console.log(add(12000, 32000))
 
 // function printResult(num: number): number {
 //     console.log('Result: ' + num);
