@@ -83,10 +83,10 @@ console.log(filterUsersByRole(list_People, Role.Guest))
 
 // DOK Extension Questions
 // Why are enums more effective here than strings or numbers?
-// Enums are more effective than strings or numbers because...
+// Enums help avoid typos, make your code easier to read, and keep allowed values in one place.
 
 // How does using readonly or immutability principles protect your data?
-// ...
+// It keeps your data safe from accidental changes, making your code more reliable.
 
 // How would you scale this system to allow dynamic roles loaded from a database?
-// ...
+// Instead of hardcoding roles, load them from the database and validate them when users log in or get updated.
