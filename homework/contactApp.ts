@@ -74,15 +74,19 @@ function searchByNameEmail(contacts: Person[], name: string, email: string) {
 }
 
 // Testing for adding a contact
+console.log("-------------------------------------\nTesting for adding contacts\n-------------------------------------")
 addContact("Tom Luiz", "tom1234@gmail.com", 12345678, true)
 console.log(contacts)
 
 // Testing for deleting a contact
+console.log("-------------------------------------\nTesting for deleting contacts\n-------------------------------------")
 deleteContact(1)
 console.log(contacts)
 
 // Testing for Displaying all the contacts
+console.log("-------------------------------------\nTesting for displaying contacts\n-------------------------------------")
 displayContacts()
 
 // Bonus Test
+console.log("-------------------------------------\nTesting for Bonus\n-------------------------------------")
 console.log(searchByNameEmail(contacts, "Charlie Nguyen", "charlie.nguyen@example.com"))
