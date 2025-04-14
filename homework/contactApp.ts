@@ -57,8 +57,20 @@ function displayContacts() {
     console.log("Contacts")
 
     const displayContacts = contacts.map(contact => {
-        console.log(contact.isFavorite == true ? "Name: ⭐" + contact.name + " | Email: " + contact.email + " | Number: " + contact.pNumber : "Name: " + contact.name + " | Email: " + contact.email + " | Number: " + contact.pNumber)
+        console.log(contact.isFavorite == true ? "⭐" + contact.name + " | Email: " + contact.email + " | Number: " + contact.pNumber :  contact.name + " | Email: " + contact.email + " | Number: " + contact.pNumber)
     })
+}
+
+// Bonus Point Search Feature
+function searchByNameEmail(contacts: Person[], name: string, email: string) {
+    const updatedContacts = contacts.filter(contact => {
+        return contact.name == name && contact.email == email
+    })
+    const displayContact = updatedContacts.map(contact => {
+        return "Name: " + contact.name + " | Email: " + contact.email + " | Number: " + contact.pNumber
+    })
+
+    return displayContact
 }
 
 // Testing for adding a contact
@@ -69,4 +81,8 @@ console.log(contacts)
 deleteContact(1)
 console.log(contacts)
 
+// Testing for Displaying all the contacts
 displayContacts()
+
+// Bonus Test
+console.log(searchByNameEmail(contacts, "Charlie Nguyen", "charlie.nguyen@example.com"))
