@@ -46,3 +46,30 @@
 //     return checkAge > user.age;
 // }
 // let add: (a: number, b: number) => number;
+// class Employee {
+//     readonly empCode: number; 
+//     empName: string; 
+//     constructor(empCode: number, empName: string) {
+//         this.empCode = empCode
+//         this.empName = empName
+//     }
+// }
+// let emp = new Employee(10, "John")
+// // emp.empCode = 20 // Compiler Error
+// emp.empName = "Bill"
+// class Circle {
+//     static pi: number = 3.14;
+//     static findArea = (rad:number) => Circle.pi * rad ** 2
+// }
+// console.log(Circle.pi) // 3.14
+// console.log(Circle.findArea(10)) // 314
+// abstract class Person {
+//     abstract name: string;
+// }
+// class Employee extends Person {
+//     name: string;
+//     constructor(name: string) {
+//         super();
+//     }
+// }
+// let emp: Person = new Employee("James", 100)
