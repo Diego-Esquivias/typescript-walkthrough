@@ -61,6 +61,8 @@ class Warrior extends GameCharacter {
 }
 
 const person = new Warrior("Bob", 12)
+
+// Testing
 console.log(person.attack())
 console.log(person.getStats())
 person.health = 75
