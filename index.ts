@@ -94,3 +94,20 @@
 // }
 
 // let emp: Person = new Employee("James", 100)
+
+
+// get mostRecentReport() {
+//     if (this.lastReport) {
+//         return this.lastReport
+//     }
+//     throw new Error("No report found.")
+// }
+
+
+// set mostRecentReport(value : string) {
+//     if (!value) {
+//         throw new Error("Please pass a valid value!")
+//     }
+//     this.addReport(value)
+// }
+
