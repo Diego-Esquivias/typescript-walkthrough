@@ -60,6 +60,21 @@ class Warrior extends GameCharacter {
     }
 }
 
+// Bonus 
+class Wizard extends GameCharacter {
+    constructor(name: string, id: number) {
+        super(40, 65, 90, name, 25, 75, id)
+    }
+
+    attack(): string {
+        return this.name + " casts a lightning spell"
+    }
+
+    getStats(): string {
+        return "Strength: " + this.strength + " | Agility: " + this.agility + " | Intelligence: " + this.intelligence + " | Health: " + this.health
+    }
+}
+
 const person = new Warrior("Bob", 12)
 
 // Testing
@@ -68,5 +83,13 @@ console.log(person.getStats())
 person.health = 75
 console.log("New Health: " + person.health)
 console.log("Max Level: " + GameCharacter.maxLevel)
+// Errors
 // person.level = 12
 // person._health = 95
+
+console.log("-----------------------------------------")
+
+// Bonus Testing
+const person2 = new Wizard("Sam", 20)
+console.log(person2.attack())
+console.log(person2.getStats())
