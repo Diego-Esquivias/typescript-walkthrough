@@ -60,7 +60,7 @@ class Warrior extends GameCharacter {
     }
 }
 
-// Bonus 
+// Bonus Class
 class Wizard extends GameCharacter {
     constructor(name: string, id: number) {
         super(40, 65, 90, name, 25, 75, id)
